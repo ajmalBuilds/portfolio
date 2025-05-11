@@ -97,3 +97,9 @@ body {
     transform: translateX(0);
   }
 }
+
+@layer components {
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 via-secondary-500 to-accent-500 dark:from-primary-400 dark:via-secondary-400 dark:to-accent-400;
+  }
+}
